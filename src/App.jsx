@@ -1,5 +1,9 @@
+import Header from "./Header"
+import Button from "./Button"
 export default function Home(){
-  return(
-    <h1>Home</h1>
+  return (
+    <div className="timeline">
+      <Header/>
+    </div>
   )
 }
