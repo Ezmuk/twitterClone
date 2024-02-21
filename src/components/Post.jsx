@@ -1,11 +1,8 @@
-import TweetTitle from "./TweetTitle"
-
-
+import Tweet from "./Tweet"
 
 export default function Post(){
   return( <>
-  <TweetTitle/>
-  
+<Tweet/>
   </>) 
     
 }
