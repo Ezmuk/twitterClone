@@ -1,11 +1,12 @@
-import photo from './assets/php.jpg';
-import emoji from './assets/Emoji.svg';
-import gif from './assets/Gif.svg'
-import media from './assets/Media.svg'
-import poll from './assets/Poll.svg'
-import schedule from './assets/Schedule.svg'
-import timeline_prop from './assets/Timeline-Prop.svg'
+import photo from '../assets/php.jpg';
+import emoji from '../assets/Emoji.svg';
+import gif from '../assets/Gif.svg'
+import media from '../assets/Media.svg'
+import poll from '../assets/Poll.svg'
+import schedule from '../assets/Schedule.svg'
+import timeline_prop from '../assets/Timeline-Prop.svg'
 import Button from "./Button"
+
 
 function Header () {
     return (
@@ -33,6 +34,7 @@ function Header () {
             
             </div>
         </div>
+        
         </>
     )}
 export default Header;
