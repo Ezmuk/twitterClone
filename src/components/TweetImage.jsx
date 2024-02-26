@@ -1,7 +1,7 @@
-import imgUrl from '../assets/Img.svg'
-
-export default function TweetImage(){
+export default function TweetImage(props){
     return(
-        <img src={imgUrl} className='tweet-image'/>
+       
+            <img  className="tweet-image" src={props.value}/>
+        
     )
 }

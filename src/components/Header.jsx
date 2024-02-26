@@ -1,14 +1,12 @@
-import PageTitle from './PageTitle';
-import TopTweet from './TopTweet';
-
-
-function Header () {
-    return (
-        <>
-        <header className='header'>
-            <PageTitle/>
-            <TopTweet/>
-        </header>
+import PageTitle from "./PageTitle";
+import timeline_prop from '../assets/Timeline-Prop.svg'
+import TopTweets from "./TopTweets";
+export default function Header(){
+    return(<>
+    <div className="header">
+        <PageTitle  value='Home'/>
+        <TopTweets  TopIMG={timeline_prop} />
+    </div>
         </>
-    )}
-export default Header;
+    )
+}

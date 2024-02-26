@@ -1,6 +1,5 @@
-function Button({titre}){
-    return (
-        <button className="button">{titre}</button>
+export default function Button(props){
+    return(
+        <div ><button className="button">{props.value}</button></div>
     )
 }
-export default Button;

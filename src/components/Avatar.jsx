@@ -1,9 +1,6 @@
-import photo from '../assets/php.jpg';
 
-export default function Avatar(){
-    return(
-        <div className='avatar'>
-        <img src={photo} alt="Profile Picture" />
-    </div>
+export default function Avatar(props){
+    return (
+        <div className="avatar"><img src={props.img}/></div>
     )
 }

@@ -1,10 +1,5 @@
-import avat from '../assets/avat.svg';
-
-
-export default function TweetAvatar(){
+export default function TweetAvatar(props){
     return(
-        <div className='tweet-avatar'>
-            <img src={avat}/>
-        </div>
+        <div className="avatar"><img src={props.img}/></div>
     )
 }

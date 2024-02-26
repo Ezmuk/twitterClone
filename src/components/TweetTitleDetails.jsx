@@ -1,8 +1,7 @@
-export default function TweetTitleDetails(){
-    return(<>
-    <div className="tweet-title-details">
-        <div>@nytimes Oct 29</div>
+export default function TweetTitleDetails(props){
+    return(
+        <div className="tweet-title-details">
+            <span>{props.title}</span>
         </div>
-    </>
     )
 }

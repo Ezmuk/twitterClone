@@ -1,13 +1,7 @@
-import Header from "./components/Header"
-import Post from './components/Post';
-import TweetEditor from "./components/TweetEditor";
-export default function Home(){
-  return (
-    <div className="timeline">
-      <Header/>
-      <TweetEditor/>
-      <Post/>
-      
-    </div>
-  )
+import Timeline from "./components/Timeline";
+
+export default function App(){
+return(
+    <Timeline/>
+)
 }
