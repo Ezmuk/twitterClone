@@ -11,4 +11,4 @@ export default function Sidebar(props) {
       <Button value="Tweet" />
     </div>
   );
-}
+    }
