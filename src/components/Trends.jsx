@@ -1,5 +1,6 @@
 import Loop_icn from "../assets/loopTrend.svg";
 import TrendsForYou from "./TrendsForYou";
+import WhotoFollow from "./WhoToFollow";
 export default function Trends() {
   return (
     <div className="trends">
@@ -12,6 +13,7 @@ export default function Trends() {
         </div>
       </div>
         <TrendsForYou/>
+        <WhotoFollow/>
     </div>
   );
 }
