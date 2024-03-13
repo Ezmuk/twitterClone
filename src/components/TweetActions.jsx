@@ -4,13 +4,12 @@ import repub from "../assets/repub.svg"
 import share from "../assets/Share.svg"
 import sms from "../assets/sms.svg"
 export default function TweetActions(props){
-    console.log(props.value.react)
     return(
         <div className="tweet-actions"> 
-        <TweetAction img={sms} value={props.value.reply}/>
-        <TweetAction img={repub} value={props.value.retweet}/>
-        <TweetAction img={love} value={props.value.react}/>
-        <TweetAction img={share}/>
+        <TweetAction svg={sms} value={props.value.reply}/>
+        <TweetAction svg={repub} value={props.value.retweet}/>
+        <TweetAction svg={love} value={props.value.react}/>
+        <TweetAction svg={share}/>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import TrendingIn from "./TrendingIn"
 import ShowMore from "./ShowMore"
 
 export default function TrendsForYou(props){
-    const trendingData = Array.from({length: 4}, (_, i) => i + 1); // Replace this with actual data
+    const trendingData = Array.from({length: 4});
     return(
         <div className="trends_f_u">
             <TrendsFuTitle img={Setting} value="Trends For you"/>

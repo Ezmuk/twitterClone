@@ -6,7 +6,7 @@ export default function Sidebar(props) {
   return (
     <div className="sidebar">
       {sidebarItems.map((item, index) => (
-        <TweetAction key={index} img={item.img} value={item.value} />
+        <TweetAction key={index} svg={item.img} value={item.value} />
       ))}
     
       <Button value="Tweet" />
