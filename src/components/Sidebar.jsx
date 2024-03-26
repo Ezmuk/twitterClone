@@ -1,12 +1,12 @@
 import Button from "./Button"
-import TweetAction from "./TweetAction"
 import sidebarItems from "../Data/dataSide";
+import Actions from "./Actions";
 
 export default function Sidebar(props) {
   return (
     <div className="sidebar">
       {sidebarItems.map((item, index) => (
-        <TweetAction key={index} svg={item.img} value={item.value} path={item.path}/>
+        <Actions key={index} svg={item.img} value={item.value} path={item.path}/>
       ))}
     
       <Button value="Tweet" />
