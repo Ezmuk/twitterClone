@@ -1,12 +1,22 @@
-import Timeline from "./components/Timeline";
+
 import Sidebar from "./components/Sidebar";
 import Trends from "./components/Trends";
+import {
+  Outlet,
+} from "react-router-dom";
 export default function App() {
   return (
     <>
-      <Sidebar />
-      <Timeline />
+    <div>
+    <Sidebar />
+    </div>
+      <div>
+        <Outlet />
+      </div>
+      <div>
       <Trends />
+      </div>
+      
     </>
   );
 }

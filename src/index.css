@@ -205,7 +205,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 25vw; /* largeur fixe */
+  width: 15vw; /* largeur fixe */
   height: 100%; /* hauteur de la fenêtre */
   overflow-y: auto; /* pour ajouter une barre de défilement vertical si le contenu est plus grand que la hauteur de l'élément */
   box-sizing: border-box;

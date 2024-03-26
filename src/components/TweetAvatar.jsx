@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 export default function TweetAvatar(props){
     return(
-        <div className="avatar"><img src={props.img}/></div>
+        <Link to={props.user} className="avatar"><img src={props.img}/></Link>
     )
 }

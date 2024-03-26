@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 export default function Avatar(props){
     return (
-        <div className="avatar"><img src={props.img}/></div>
+        <Link to="/brandley_" className="avatar"><img src={props.img}/></Link>
     )
 }

@@ -10,14 +10,14 @@ import More_icn from "../assets/More.svg"
 
 const sidebarItems = [
   { img: TweetWhite, value: "" },
-  { img: Home_Fill, value: "Home" },
-  { img: Explore_icn, value: "Explore" },
-  { img: Notificpic, value: "Notifications" },
-  { img: Message_icn, value: "Messages" },
-  { img: Bookmarks_icn, value: "Bookmarks" },
-  { img: Lists_icn, value: "Lists" },
-  { img: Profile_icn, value: "Profile" },
-  { img: More_icn, value: "more" },
+  { img: Home_Fill, value: "Home",path: "/"},
+  { img: Explore_icn, value: "Explore" ,path: "/"},
+  { img: Notificpic, value: "Notifications" ,path: "/"},
+  { img: Message_icn, value: "Messages",path: "/"},
+  { img: Bookmarks_icn, value: "Bookmarks" ,path: "/"},
+  { img: Lists_icn, value: "Lists" ,path: "/"},
+  { img: Profile_icn, value: "Profile" ,path:"/bradley_"},
+  { img: More_icn, value: "more",path:"/" },
 ];
 
 
