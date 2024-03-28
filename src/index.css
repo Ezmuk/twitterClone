@@ -96,42 +96,35 @@ body {
 }
 
 .input_trends input {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  width: 100%;
-  font-size: large;
-}
-.input_trends input::placeholder {
-  color: #6e767d;
+  @apply bg-transparent focus:outline-none text-white w-full text-lg;
 }
 
-.trends {
-  padding: 1.5rem 1rem;
-  gap: 20px;
+.input_trends input::placeholder {
+  @apply text-[#6e767d]; 
 }
+
+
+.trends {
+  @apply py-[1.5rem] px-[1rem] gap-5;
+}
+
 .trends_f_u,
 .whofollow {
-  width: 90%;
-  background: #202327;
-  padding: 1.5rem 1rem;
-  padding-top: 10px;
-  border-radius: 15px;
+  @apply w-[100%] bg-[#202327] rounded-lg px-4 py-3 pt-4; 
 }
+
 .trendsFuTitle {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  @apply flex justify-between mb-5;
 }
+
 .input_div {
-  width: 90%;
+  @apply w-[90%];
 }
+
 .trendingIn {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  @apply flex justify-between mb-2;
 }
+
 .trendingIn p {
   margin: 0;
   padding: 0;
