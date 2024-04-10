@@ -12,6 +12,7 @@ export default function TweetAction(props) {
       className="tweet-action"
       onMouseEnter={handleState}
       onMouseLeave={handleState}
+      onClick={props.setLiked}
     >
       {state ? props.onsvg : props.svg}
       <span style={{ color: state && props.color }}>{props.value}</span>

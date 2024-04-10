@@ -110,7 +110,7 @@ body {
 
 .trends_f_u,
 .whofollow {
-  @apply w-[100%] bg-[#202327] rounded-lg px-4 py-3 pt-4; 
+  @apply w-[100%] bg-[#202327] rounded-[30px] px-4 py-3 pt-4; 
 }
 
 .trendsFuTitle {
@@ -126,46 +126,36 @@ body {
 }
 
 .trendingIn p {
-  margin: 0;
-  padding: 0;
-  font-size: smaller;
-  color: #6e767d;
+  @apply m-0 p-0 text-sm text-[#6e767d];
 }
+
 .btn_sm {
-  width: 106px;
-  height: 30px;
-  color: #1d9bf0;
-  background: transparent;
-  font-size: larger;
-  border: none;
+  @apply w-[106px] h-12 bg-transparent text-[#1d9bf0] border-none text-lg;
 }
+
 .sous-follow {
-  display: flex;
-  justify-content: space-between;
+  @apply flex justify-between;
 }
+
 .sous-fol {
-  display: flex;
+  @apply flex;
 }
 .button-follow {
-  background-color: #eff3f4;
-  color: #0f1419;
-  width: 73px;
-  height: 37px;
+  @apply bg-[#eff3f4] text-[#0f1419];
 }
+
 .sous-follow-owner-title1 {
-  font-weight: 400;
-  font-size: 15px;
-  color: #d9d9d9;
+  @apply font-normal text-[15px] text-[#d9d9d9];
 }
+
 .sous-follow-owner-title2 {
-  color: #6e767d;
+  @apply text-[#6e767d];
 }
+
 .sous-follow-owner {
-  margin-left: 10px;
+  @apply flex ml-[10px] items-center;
 }
 .whofollow {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 20px;
+  @apply flex flex-col justify-between gap-[20px];
 }
+
