@@ -1,13 +1,14 @@
 import Tweet from "./Tweet";
-import tweets from "../Data/data_tweets";
-export default function Tweets(){
- 
-    
-    return(
-        <div className="tweets">
-            {tweets.map((item)=>
-            <Tweet key={item.id} value={item} />)}
-            
-        </div>
-    )
+import { useContext } from "react";
+import { TweetContext } from "../context/context";
+
+export default function Tweets() {
+  const { post } = useContext(TweetContext);
+  return (
+    <div className="tweets">
+      {post.map((item) => (
+        <Tweet key={item.id} value={item} />
+      ))}
+    </div>
+  );
 }

@@ -249,7 +249,6 @@ export default function TweetActions(props) {
           onsvg={el.onsvg}
           color={el.color}
           setLiked={handleclick}
-          setLikeCount={handleclick}
         />
       ))}
     </div>

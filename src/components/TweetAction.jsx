@@ -7,6 +7,7 @@ export default function TweetAction(props) {
   function handleState() {
     setState(!state);
   }
+
   return (
     <div
       className="tweet-action"

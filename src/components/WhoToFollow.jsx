@@ -4,7 +4,7 @@ import avat from "../assets/avat.svg";
 import tweetlogo from "../assets/tweetlogo.svg";
 import SousFollow from "./SousFollow";
 
-import ShowMore from "./ShowMore"
+import ShowMore from "./ShowMore";
 export default function WhotoFollow(props) {
   const follows = [
     {
@@ -13,8 +13,11 @@ export default function WhotoFollow(props) {
       owner: { title1: "The new york times", title2: "@nytimes" },
     },
     { id: "02", img: cnn, owner: { title1: "CNN", title2: "@CNN" } },
-    { id: "03", img: tweetlogo, owner: { title1: "Twitter", title2: "@Twitter" } },
-   
+    {
+      id: "03",
+      img: tweetlogo,
+      owner: { title1: "Twitter", title2: "@Twitter" },
+    },
   ];
   return (
     <div className="whofollow">
@@ -22,7 +25,7 @@ export default function WhotoFollow(props) {
       {follows.map((follow, index) => (
         <SousFollow key={index} img={follow.img} value={follow.owner} />
       ))}
-        <ShowMore/>
+      <ShowMore />
     </div>
   );
 }
