@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { TweetContext } from "../context/context";
 import { useContext, useState } from "react";
 import axios from "axios";
+
 export default function TweetEditorForm() {
   const API_URL = "https://662614e1052332d553218bb3.mockapi.io/api/post/tweets";
   const { post, setPost } = useContext(TweetContext);
@@ -23,6 +24,7 @@ export default function TweetEditorForm() {
           "tweet-title": {
             "tweet-title-author": "Bradley",
             "tweet-author": "Bradley",
+            "tweet-author": "Bradley_",
             "tweet-time": "now",
           },
           "tweet-text": data.tweet,
@@ -34,10 +36,11 @@ export default function TweetEditorForm() {
         },
       },
     };
-    reset();
 
     axios.post(API_URL, arr).then((response) => {
       console.log("New post added:", response.data);
+      setPost([response.data, ...post]); // Mettre à jour l'état avec le nouveau post ajouté
+      reset();
     });
   }
 
