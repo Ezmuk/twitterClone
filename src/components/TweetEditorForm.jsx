@@ -23,7 +23,6 @@ export default function TweetEditorForm() {
         "tweet-body": {
           "tweet-title": {
             "tweet-title-author": "Bradley",
-            "tweet-author": "Bradley",
             "tweet-author": "Bradley_",
             "tweet-time": "now",
           },
