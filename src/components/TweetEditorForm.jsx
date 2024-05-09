@@ -6,7 +6,7 @@ import { useContext, useState } from "react";
 import axios from "axios";
 
 export default function TweetEditorForm() {
-  const API_URL = "https://662614e1052332d553218bb3.mockapi.io/api/post/tweets";
+  const API_URL = "https://twitterbackend-3ci6.onrender.com/tweets";
   const { post, setPost } = useContext(TweetContext);
   const {
     register,

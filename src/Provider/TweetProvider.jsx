@@ -6,7 +6,7 @@ import useFetch from "../hooks/useFetch";
 export default function TweetProvider({ children }) {
   const [post, setPost] = useState([]);
   const { data, isPending } = useFetch(
-    "https://662614e1052332d553218bb3.mockapi.io/api/post/tweets"
+    "https://twitterbackend-3ci6.onrender.com/tweets"
   );
 
   useEffect(() => {
